@@ -14,7 +14,7 @@ body{
 }
 
 .main{
-  background-color: #0061f6;
+  background-color: #000000;
 }
 header{
   margin: 0;
@@ -44,7 +44,7 @@ header h1{
 
   list-style: none;
   padding: 0%;
-  background-color: rgba(9, 20, 7, 0.75);
+  background-color: rgba(9, 20, 7, 0.2);
 }
 .left{
   float: left!important;
@@ -67,10 +67,56 @@ header h1{
   margin: 10%;
 }
 
-.footer{
-  background-color: #000000;
-  color: white;
-}
 .main h1{
   color: white;
+}
+.siguenos{
+  color: white;
+  padding: none;
+  display: block;
+  margin: auto;
+}
+
+.redes{
+  display: block;
+  margin: auto;
+}
+.iconoface img{
+  display: block;
+  margin: 4%;
+  height: 8%;
+  width: 8%;
+  float: left;
+  filter: brightness(0) invert(1);
+  color: #086424;
+}
+
+.iconoinsta img{
+  display: block;
+  margin: 4%;
+  height: 8%;
+  width: 8%;
+  float: left;
+  filter: brightness(0) invert(1);
+  color: #086424;
+}
+
+.iconoyou img{
+  display: block;
+  margin: 4%;
+  height: 8%;
+  width: 8%;
+  float: right;
+  filter: brightness(0) invert(1);
+  color: #086424;
+}
+
+.iconowhat img{
+  display: block;
+  margin: 4%;
+  height: 8%;
+  width: 8%;
+  float: right;
+  filter: brightness(0) invert(1);
+  color: #086424;
 }

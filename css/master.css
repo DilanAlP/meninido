@@ -1,0 +1,76 @@
+body{
+  font: 13pt Teko, verdana, sans-serif;
+  margin: 0;
+  background: #000000;
+}
+@font-face {
+  font-family: 'Teko';
+  src: url('/font/Teko-Bold.ttf') format('truetype'),
+  url('font/Teko-Light.ttf') format('truetype'),
+  url('font/Teko-Medium.ttf') format('truetype'),
+  url('font/Teko-Regular.ttf') format('truetype'),
+  url('font/Teko-Semibold.ttf') format('truetype');
+  font-style: normal;
+}
+
+.main{
+  background-color: #0061f6;
+}
+header{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    rgba(81, 83, 100, 0.1),
+    rgba(1, 1, 1,1)),
+    url(../img/jaguar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header img{
+  display: block;
+  margin: auto;
+  width: 30%;
+
+}
+
+header h1{
+  font-size: 50pt;
+  color: #ffffff;
+}
+
+.columna{
+  position: relative;
+
+  list-style: none;
+  padding: 0%;
+  background-color: rgba(9, 20, 7, 0.75);
+}
+.left{
+  float: left!important;
+}
+
+.grid_item{
+  float: left;
+  margin: 4%;
+  padding: 0;
+  background-color: rgba(0, 221, 117, 0.21);
+}
+.grid_image{
+  display: block;
+  margin: 0;
+}
+.four-sixths{
+  width: 66%;
+  background: rgba(0, 221, 117, 0.21);
+  display: block;
+  margin: 10%;
+}
+
+.footer{
+  background-color: #000000;
+  color: white;
+}
+.main h1{
+  color: white;
+}

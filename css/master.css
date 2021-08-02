@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font: 13pt Teko, verdana, sans-serif;
   margin: 0;
@@ -16,13 +19,67 @@ body{
 .main{
   background-color: #000000;
 }
+
 header{
+  top: 0%;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(
     rgba(81, 83, 100, 0.1),
     rgba(1, 1, 1,1)),
     url(../img/jaguar.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.guacamaya{
+  top: 0%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    rgba(81, 83, 100, 0.1),
+    rgba(1, 1, 1,1)),
+    url(../img/guacamaya.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quetzal{
+  top: 0%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    rgba(81, 83, 100, 0.1),
+    rgba(1, 1, 1,1)),
+    url(../img/quetzal.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aguila{
+  top: 0%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    rgba(81, 83, 100, 0.1),
+    rgba(1, 1, 1,1)),
+    url(../img/aguila.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emu{
+  top: 0%;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    rgba(81, 83, 100, 0.1),
+    rgba(1, 1, 1,1)),
+    url(../img/Emu.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,4 +176,51 @@ header h1{
   float: right;
   filter: brightness(0) invert(1);
   color: #086424;
+}
+
+.menu a{
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: linear-gradient(90deg,#086424,#b6d43c);
+}
+
+span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50% ,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    width: 0px;
+    height: 0px;
+    opacity: .4;
+  }
+  100%{
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+.topbtn{
+  margin: 0;
+  padding: 0;
+  left: 85%;
+  top: 90PX;
+  position:sticky;
+  z-index: 1;
+
 }

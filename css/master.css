@@ -112,6 +112,7 @@ header h1{
   margin: 4%;
   padding: 0;
   background-color: rgba(0, 221, 117, 0.21);
+  border-radius: 5%;
 }
 .grid_image{
   display: block;
@@ -122,6 +123,7 @@ header h1{
   background: rgba(0, 221, 117, 0.21);
   display: block;
   margin: 10%;
+  border-radius: 2%;
 }
 
 .main h1{
@@ -178,11 +180,37 @@ header h1{
   color: #086424;
 }
 
+.der{
+  animation: der 1s;
+}
+
+.iz{
+  animation: izq 1.5s;
+}
+@keyframes izq {
+  0%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes der {
+  0%{
+    transform: translateX(1000px);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
 .menu a{
   position: relative;
   display: inline-block;
   padding: 12px 36px;
-  margin: 10px 0;
+  margin: 10px 5px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -219,7 +247,7 @@ span{
   margin: 0;
   padding: 0;
   left: 85%;
-  top: 90PX;
+  top: 80%;
   position:sticky;
   z-index: 1;
 

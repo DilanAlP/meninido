@@ -252,3 +252,14 @@ span{
   z-index: 1;
 
 }
+
+.fadeTop{
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.visible{
+  opacity: 1;
+  transform: translate(0,0);
+}

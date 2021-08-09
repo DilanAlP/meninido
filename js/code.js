@@ -1,17 +1,18 @@
-const buttons = document.querySelectorAll('a');
-buttons.forEach(btn => {
-  btn.addEventListener('click', function(e){
+window.addEventListener('scroll', function()  {
+ let elements = document.getElementsByClassName('scroll-content');
+ let screenSize = window.innerHeight;
 
-    Let x = e.clientX - e.target.offsetLeft;
-    Let y = e.clientY - e.target.offsetTop;
+   for(var i = 0; i < elements.length; i++) {
+     let element = elements[i];
 
-    Let ripples  = document.createElement('span');
-    ripples.style.left = x + 'px';
-    ripples.style.top = y + 'px';
-    this.appendChild(ripples);
+     if(element.getBoundingClientRect().top < screenSize) {
+       element.classList.add('visible');
+     } else {
+       element.classList.remove('visible');
+     }
+   }
+});
 
-    setTimeout(()=>{
-      ripples.remove()
-    },1000);
-    })
+$('input').on('change', function() {
+ $('body').toggleClass('blue');
 });

@@ -5,14 +5,15 @@ body{
   font: 13pt Teko, verdana, sans-serif;
   margin: 0;
   background: #000000;
+  color: #ffffff;
 }
 @font-face {
   font-family: 'Teko';
-  src: url('/font/Teko-Bold.ttf') format('truetype'),
-  url('font/Teko-Light.ttf') format('truetype'),
-  url('font/Teko-Medium.ttf') format('truetype'),
-  url('font/Teko-Regular.ttf') format('truetype'),
-  url('font/Teko-Semibold.ttf') format('truetype');
+  src: url('../font/Teko-Bold.ttf') format('truetype'),
+  url('../font/Teko-Light.ttf') format('truetype'),
+  url('../font/Teko-Medium.ttf') format('truetype'),
+  url('../font/Teko-Regular.ttf') format('truetype'),
+  url('../font/Teko-Semibold.ttf') format('truetype');
   font-style: normal;
 }
 
@@ -110,7 +111,7 @@ header h1{
 .grid_item{
   float: left;
   margin: 4%;
-  padding: 0;
+  padding: 3px;
   background-color: rgba(0, 221, 117, 0.21);
   border-radius: 5%;
 }
@@ -134,6 +135,7 @@ header h1{
   padding: none;
   display: block;
   margin: auto;
+
 }
 
 .redes{
@@ -262,4 +264,8 @@ span{
 .visible{
   opacity: 1;
   transform: translate(0,0);
+}
+
+.rellenar{
+  clear:both;
 }
